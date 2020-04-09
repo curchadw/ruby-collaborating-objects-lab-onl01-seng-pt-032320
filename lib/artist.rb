@@ -15,10 +15,13 @@ def self.all
   @@all
 end
 
+<<<<<<< HEAD
 def songs
     Song.all.select {|song| song.artist == self}
 end
 
+=======
+>>>>>>> b9af3cce2ddf9067d2ddd90c5dfcaa70940d491e
 def add_song(songs)
  
   songs.artist = self

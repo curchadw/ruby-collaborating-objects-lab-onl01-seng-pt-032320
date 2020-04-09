@@ -21,9 +21,14 @@ end
 
 def self.new_by_filename(file_name)
     
+<<<<<<< HEAD
     artist = file_name.split(" - ")[0]
     song = file_name.split(" - ")[1]
     new_song = self.new(song)
+=======
+    new_song = self.new(song)
+    new_song.gsub("mp3","")
+>>>>>>> b9af3cce2ddf9067d2ddd90c5dfcaa70940d491e
     new_song.artist_name = artist
     new_song
  
